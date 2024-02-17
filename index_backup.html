@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
+
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
@@ -19,80 +20,27 @@
                 <name style="font-size:32px">Hongbin Liu</name></br>
                 <span style="color: grey; font-size: 18px;">{first_name}.{last_name}@duke.edu</span>
               </p>
-              <p style="text-align:justify; font" >
-                Hi! I am a Ph.D. student at<a href="https://duke.edu/"> Duke University</a>, where I am fortunate to be supervised by <a href="https://people.duke.edu/~zg70/"> Prof. Neil Gong</a>. My research focuses on AI safety and privacy. Priorly, I earned a B.Eng. from the <a href="https://en.ustc.edu.cn/"> University of Science and Technology of China</a> in 2020.
-                I worked with <a href="http://www.tongzhang-ml.org/">  Prof. Tong Zhang</a> at HKUST in Summer 2019.
+              <p style="text-align:justify; font">Hi! I am a Ph.D. student at<a href="https://duke.edu/"> Duke University</a>, where I am fortunate to be supervised by <a href="https://people.duke.edu/~zg70/"> Prof. Neil Gong</a>. My research focuses on AI safety and privacy.
+              </p>
+              <p style="text-align:justify">
+              Priorly, I earned a B.Eng. from the <a href="https://en.ustc.edu.cn/"> University of Science and Technology of China</a> in 2020.
+              <!-- guided by <a href="https://xueyangfu.github.io/"> Prof. Xueyang Fu</a> and <a href="http://en.auto.ustc.edu.cn/2021/0616/c26828a513174/page.htm"> Prof. Zheng-Jun Zha</a>, and  -->
+              I worked with <a href="http://www.tongzhang-ml.org/">  Prof. Tong Zhang</a> at HKUST in Summer 2019.
+              </p>
+              <!-- <p style="text-align:justify">
+                I am broadly interested in machine learning, security, and privacy. My recent research focuses on trustworthy AI foundation models.
+              </p> -->
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
               <a href="images/img_230729.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/img_230729.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
-      
-        <script>
-          const textSections = [
-            {
-              element: document.querySelector('p:nth-child(2)'),
-              text: ["Hi! I am a Ph.D. student at<a href='https://duke.edu/'> Duke University</a>, where I am fortunate to be supervised by <a href='https://people.duke.edu/~zg70/'> Prof. Neil Gong</a>. My research focuses on AI safety and privacy. Priorly, I earned a B.Eng. from the <a href='https://en.ustc.edu.cn/'> University of Science and Technology of China</a> in 2020. I worked with <a href='http://www.tongzhang-ml.org/'>  Prof. Tong Zhang</a> at HKUST in Summer 2019."]
-            }
-          ];
-      
-          function typeTextSequentially(index) {
-            if (index < textSections.length) {
-              const section = textSections[index];
-              typeText(section.element, section.text, () => {
-                setTimeout(() => {
-                  typeTextSequentially(index + 1);
-                }, 200); // Delay between sections
-              });
-            }
-          }
-      
-          function typeText(element, textArray, onComplete, index = 0, position = 0) {
-            if (index < textArray.length) {
-              const currentText = textArray[index];
-              if (position < currentText.length) {
-                element.innerHTML = currentText.substring(0, position + 1);
-                setTimeout(() => {
-                  typeText(element, textArray, onComplete, index, position + 1);
-                }, 20); // Adjust the typing speed here
-              } else {
-                onComplete();
-              }
-            }
-          }
-      
-          typeTextSequentially(0);
-      
-          document.querySelectorAll('p').forEach(p => {
-            p.addEventListener('click', function(event) {
-              if (event.target.tagName === 'A') {
-                const linkHref = event.target.getAttribute('href');
-                if (linkHref) {
-                  window.location.href = linkHref;
-                }
-              }
-            });
-          });
-        </script>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-<<<<<<< HEAD
-              <heading>Publications </heading> 
-              <p> 2024 </p>
-              <ul>
-                <li>
-                  <a href="https://arxiv.org/pdf/2303.01959.pdf">Mudjacking: Patching Backdoor Vulnerabilities in Foundation Models
-                  </a><br>
-                  <strong>Hongbin Liu</strong>, Michael K Reiter, Neil Zhenqiang Gong<br>
-                  <em>USENIX Security Symposium, 2024.</em>
-              </li><br>
-              </ul>
-=======
               <heading style="font-size: 22px; font-weight: bold;">Publications</heading> 
->>>>>>> 6fd3dae39376b0cf805cdd537c4bd48d7eb7f156
               <p> 2023 </p>
               <ul>
                 <li>
@@ -184,7 +132,7 @@
           <tr>
             <td>
               <heading style="font-size: 22px; font-weight: bold;">Experiences</heading> 
-              <p> June 2023 - Jan. 2024: Student Researcher, <a href="https://research.google/">Google Research</a>.</p>
+              <p> June 2023 - Oct. 2023: Student Researcher, <a href="https://research.google/">Google Research</a>.</p>
               <p> Jan. 2021 - Apr. 2021: Research Intern, <a href="https://www.alibabagroup.com/en-US">Alibaba Group</a>.</p>
               <p> Jul. 2019 - Sep. 2019: Research Intern, <a href="https://hkust.edu.hk/">HKUST</a>.</p>
             </td>
