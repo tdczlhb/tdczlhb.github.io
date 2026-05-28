@@ -105,6 +105,28 @@ name {
   font-size: 32px;
 }
 
+.experience-item {
+  margin: 12px 0 16px;
+}
+
+.experience-main {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.experience-meta {
+  margin-top: 3px;
+  color: #666;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.experience-meta a {
+  font-size: 13px;
+}
+
 .one {
   width: 160px;
   height: 160px;
