@@ -105,6 +105,41 @@ name {
   font-size: 32px;
 }
 
+.profile-photo-cell {
+  text-align: center;
+}
+
+.profile-photo-frame {
+  display: inline-block;
+  width: min(100%, 300px);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 1px solid rgba(24, 38, 51, 0.14);
+  border-radius: 4px;
+  background: #d8d6d1;
+  box-shadow: 0 8px 24px rgba(24, 38, 51, 0.14);
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 48%;
+  transition: transform 300ms ease, filter 300ms ease;
+}
+
+.profile-photo-frame:hover .profile-photo {
+  transform: scale(1.025);
+  filter: brightness(1.035);
+}
+
+@media (max-width: 600px) {
+  .profile-photo-frame {
+    width: min(100%, 220px);
+  }
+}
+
 .experience-item {
   margin: 12px 0 16px;
 }
